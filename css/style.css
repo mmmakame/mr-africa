@@ -48,6 +48,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -5827,8 +5831,34 @@ a.close.disabled {
   color: #656565;
 }
 
+
+
+/* ======================== Slide Area =================================== */
+
 .carousel {
   position: relative;
+}
+
+@media (min-width: 760px) {
+  .carousel{
+    height: 90vh;
+  }
+}
+@media (min-width: 760px) {
+  .carousel img{
+    height: 90vh;
+  }
+}
+
+.header-btn{
+  border: 2px solid var(--primary);
+  padding: 10px;
+}
+.header-btn:hover{
+  border: 2px solid var(--primary);
+  background: var(--primary);
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .carousel.pointer-event {
@@ -9488,13 +9518,41 @@ h6,
   text-align: center;
 }
 
-.back-to-top {
+.back-to-top{
   position: fixed;
   display: none;
-  right: 45px;
+  right: 5px;
   bottom: 45px;
   z-index: 11;
 }
+
+.whatsapp{
+  position: fixed;
+  display: none;
+  left: 2px;
+  bottom: 180px;
+  z-index: 11;
+}
+
+.instagram{
+  position: fixed;
+  display: none;
+  left: 2px;
+  bottom: 120px;
+  z-index: 11;
+}
+
+.facebook{
+  position: fixed;
+  display: none;
+  left: 2px;
+  bottom: 60px;
+  z-index: 11;
+}
+
+
+
+
 
 .nav-bar::before {
   position: absolute;
@@ -9563,8 +9621,12 @@ h6,
   }
 }
 
-.page-header {
+.page-header-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gallery-1.jpg), no-repeat center center;
+  background-size: cover;
+}
+.page-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gallery-3.jpg), no-repeat center center;
   background-size: cover;
 }
 
@@ -9637,6 +9699,7 @@ h6,
 
 .package-item {
   transition: .5s;
+  height: 660px;
 }
 
 .package-item:hover {
@@ -9739,6 +9802,10 @@ h6,
   height: 500px;
 }
 
+.testimonial-cards{
+  height: 400px;
+}
+
 .blog-item {
   transition: .5s;
 }
@@ -9781,4 +9848,190 @@ h6,
 
 
 
+/******** Back to Top CSS *********/
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 1;
+  font-size: 25px;
+  right: 2px;
+  bottom: 30px;
+  transition: 0.5s;
+  z-index: 11;
+}
 
+.back-to-top i {
+  color: #fff;
+}
+
+.back-to-top i:hover {
+  color: #004faa;
+}
+
+.back-to-top {
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+
+/******** social media CSS *********/
+.whatsapp{
+  position: fixed;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+  right: 30px;
+  bottom: 180px;
+  transition: 0.5s;
+  z-index: 11;
+}
+.whatsapp i{ 
+  color: #fff;
+}
+
+.whatsapp i:hover {
+  color: #004faa;
+}
+
+.whatsapp
+  {
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+
+
+.instagram{
+  position: fixed;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+  right: 30px;
+  bottom: 120px;
+  transition: 0.5s;
+  z-index: 11;
+}
+.instagram i{ 
+  color: #fff;
+}
+
+.instagram i:hover {
+  color: #004faa;
+}
+
+.instagram
+  {
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.facebook{
+  position: fixed;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+  right: 30px;
+  bottom: 60px;
+  transition: 0.5s;
+  z-index: 11;
+}
+.facebook i{ 
+  color: #fff;
+}
+
+.facebook i:hover {
+  color: #004faa;
+}
+
+.facebook
+  {
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+
+.footer{
+  background-image:url(../img/carousel-10.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
