@@ -9564,6 +9564,11 @@ h6,
 }
 
 .page-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gallery-1.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-2.jpg), no-repeat center center;
   background-size: cover;
 }
