@@ -1547,7 +1547,7 @@ pre code {
 }
 
 .table-sm th,
-.table-sm td {
+.table-sm td {d
   padding: 0.3rem;
 }
 
@@ -9570,6 +9570,11 @@ h6,
 
 .page-header-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-2.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-9.jpg), no-repeat center center;
   background-size: cover;
 }
 
