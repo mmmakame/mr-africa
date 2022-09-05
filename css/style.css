@@ -9526,6 +9526,14 @@ h6,
   z-index: 11;
 }
 
+.trip{
+  position: fixed;
+  display: none;
+  left: 2px;
+  bottom: 240px;
+  z-index: 11;
+}
+
 .whatsapp{
   position: fixed;
   display: none;
@@ -9855,7 +9863,8 @@ h6,
   width: 50px;
   height: 50px;
   text-align: center;
-  line-height: 1;
+  line-height: 1;    <!-- facebook -->
+
   font-size: 25px;
   right: 2px;
   bottom: 30px;
@@ -9895,6 +9904,52 @@ h6,
 
 
 /******** social media CSS *********/
+
+.trip{
+  position: fixed;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+  right: 40px;
+  bottom: 240px;
+  transition: 0.5s;
+  z-index: 11;
+}
+.trip i{ 
+  color: #fff;
+}
+
+.trip i:hover {
+  color: #004faa;
+}
+
+.trip
+  {
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+
 .whatsapp{
   position: fixed;
   display: none;
@@ -9938,6 +9993,8 @@ h6,
     transform: translateY(-15px);
   }
 }
+
+
 
 
 

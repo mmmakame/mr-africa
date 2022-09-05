@@ -60,7 +60,7 @@
         return false;
     });
 
-     // whatsapp
+     // faceboobk
      $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.facebook').fadeIn('slow');
@@ -71,6 +71,20 @@
     $('.facebook').click(function () {
         // $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         window.open("https://www.facebook.com/Mr-Africa-Tours-Safari-126046332126210/")
+        return false;
+    });
+
+    // tripadvisor
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.trip').fadeIn('slow');
+        } else {
+            $('.trip').fadeOut('slow');
+        }
+    });
+    $('.trip').click(function () {
+        // $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        window.open("https://supplier.viator.com/listings")
         return false;
     });
 
